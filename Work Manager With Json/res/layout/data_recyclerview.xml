@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:padding="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardMaxElevation="15dp"
+        card_view:cardElevation="10dp"
+        card_view:contentPadding="5dp"
+        android:padding="5dp"
+        card_view:cardBackgroundColor="@color/colorPrimary"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardPreventCornerOverlap="false">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Viewname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding= "5dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/ViewFrequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding= "5dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
